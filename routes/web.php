@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Setting\PasswordController;
+use App\Http\Controllers\Setting\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', DashboardController::class)->name('dashboard')->middleware('auth');
+Route::middleware('auth')->group(function () {
+    Route::get('/home', DashboardController::class)->name('dashboard')->middleware('auth');
+
+    Route::prefix('setting')->name('setting.')->group(function () {
+        Route::resource('profile', ProfileController::class)->only('index', 'update');
+        Route::resource('password', PasswordController::class)->only('index', 'update');
+    });
+});
