@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', DashboardController::class)->name('dashboard');
+Route::get('/home', DashboardController::class)->name('dashboard')->middleware('auth');
