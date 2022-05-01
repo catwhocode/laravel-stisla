@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <h2 class="section-title">Dashbaord content</h2>
+    <h2 class="section-title">Dashboard content</h2>
     <p class="section-lead">
         File ini terletak di <code>dashboard/index.blade.php</code> dan dikontrol oleh controller <code>DashboardController.php</code>.
     </p>
