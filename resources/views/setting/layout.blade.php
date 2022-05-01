@@ -10,18 +10,14 @@
         </div>
         <div class="card-body">
           <ul class="nav nav-pills flex-column">
-            <li class="nav-item"><a href="#" class="nav-link active">General</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">SEO</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Email</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">System</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Security</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Automation</a></li>
+            <li class="nav-item"><a href="{{ route('setting.profile.index') }}" class="nav-link @if(\Route::currentRouteName() == "setting.profile.index") active @endif">Update Profile</a></li>
+            <li class="nav-item"><a href="{{ route('setting.password.index') }}" class="nav-link @if(\Route::currentRouteName() == "setting.password.index") active @endif">Update Password</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="col-md-8">
-      @yield('content')
+      @yield('content-child')
 
     </div>
   </div>

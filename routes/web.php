@@ -24,7 +24,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/home', DashboardController::class)->name('dashboard')->middleware('auth');
 
     Route::prefix('setting')->name('setting.')->group(function () {
-        Route::resource('profile', ProfileController::class)->only('index', 'update');
-        Route::resource('password', PasswordController::class)->only('index', 'update');
+        Route::resource('profile', ProfileController::class)->only('index', 'store');
+        Route::resource('password', PasswordController::class)->only('index', 'store');
     });
 });
