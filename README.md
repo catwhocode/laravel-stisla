@@ -15,6 +15,28 @@ Use this template as your first step of development, not other.
 - Serve `php artisan serve`
 - Make something awesome!
 
+## Screenshots
+
+### Login
+
+![Login](https://raw.githubusercontent.com/AaEzha/laravel-stisla/profile-setting/screenshots/login.png)
+
+### Register
+
+![Register](https://raw.githubusercontent.com/AaEzha/laravel-stisla/profile-setting/screenshots/register.png)
+
+### Dashboard
+
+![Dashboard](https://raw.githubusercontent.com/AaEzha/laravel-stisla/profile-setting/screenshots/dashboard.png)
+
+### Update Profile
+
+![Update Profile](https://raw.githubusercontent.com/AaEzha/laravel-stisla/profile-setting/screenshots/profile.png)
+
+### Update Password
+
+![Update Password](https://raw.githubusercontent.com/AaEzha/laravel-stisla/profile-setting/screenshots/password.png)
+
 ## Nurfachmi Sponsors
 
 We would like to extend our thanks to the following sponsors for funding Nurfachmi's project development. If you are interested in becoming a sponsor, please visit the Nurfachmi [Saweria page](https://saweria.co/rezanurfachmi).
